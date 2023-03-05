@@ -1,3 +1,4 @@
+import Player from './player.js';
 
 const gameGridContainer = document.querySelector("#board-grid-container");
 const gameGrid = document.querySelector("#board-grid");
@@ -21,7 +22,9 @@ const Gameboard = (() => {
       gridBlock.classList = "square";
       gridBlock.dataset.key = index;
       gridBlock.textContent = index;
-      gridBlock.addEventListener("click", Player.pick);
+      gridBlock.addEventListener("click", function() {
+        Player.pick(gridBlock)
+    });
       gameGrid.appendChild(gridBlock);
     });
   };
@@ -32,3 +35,8 @@ const Gameboard = (() => {
   };
 })();
 
+
+Gameboard.constructGrid();
+
+
+export default Gameboard;
