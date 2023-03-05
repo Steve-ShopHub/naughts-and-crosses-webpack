@@ -1,0 +1,23 @@
+{
+  "name": "naughts-and-crosses-webpack",
+  "version": "1.0.0",
+  "description": "Naughts and crosses game for The Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steve-ShopHub/naughts-and-crosses-webpack.git"
+  },
+  "author": "Steve McCormick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steve-ShopHub/naughts-and-crosses-webpack/issues"
+  },
+  "homepage": "https://github.com/Steve-ShopHub/naughts-and-crosses-webpack#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
