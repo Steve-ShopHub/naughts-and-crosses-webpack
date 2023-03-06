@@ -31,8 +31,18 @@ html {
     justify-content: center;
 }
 
+.square:hover {
+    border: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+    
+    
+}
+
 .cross {
-    content: url(./img/cross.png);
+    content: url('./img/cross.png');
 }
 
 .naught {

@@ -18,10 +18,14 @@ const Gameboard = (() => {
     displayContainer.id = 'display-container';
 
     const playerTurnTitle = document.createElement('h1');
+    playerTurnTitle.id = 'player-title';
     displayContainer.appendChild(playerTurnTitle);
+    displayContainer.removeChild
     playerTurnTitle.textContent = `${currentPlayer.getName()}'s turn`
 
   }
+
+
 
   
 
@@ -45,10 +49,20 @@ const Gameboard = (() => {
       const gridBlock = document.createElement("div");
       gridBlock.classList = "square";
       gridBlock.dataset.key = index;
+
     //   gridBlock.textContent = index;
       gridBlock.addEventListener("click", function() {
         Player.pick(gridBlock)
+    }, {once: true});
+
+    gridBlock.addEventListener('mouseenter', function() {
+      Player.mouseEnter(gridBlock)
     });
+
+    gridBlock.addEventListener('mouseleave', function() {
+      Player.mouseLeave(gridBlock)
+    });
+
       gameGrid.appendChild(gridBlock);
     });
   };
