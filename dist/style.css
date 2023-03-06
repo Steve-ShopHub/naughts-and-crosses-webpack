@@ -19,6 +19,11 @@ html {
     grid-gap: 10px;
 }
 
+#display-container {
+    display: flex;
+    border: solid 2px black;
+}
+
 .square {
     border: solid 2px black;
     display: flex;
