@@ -21,7 +21,7 @@ const Gameboard = (() => {
       const gridBlock = document.createElement("div");
       gridBlock.classList = "square";
       gridBlock.dataset.key = index;
-      gridBlock.textContent = index;
+    //   gridBlock.textContent = index;
       gridBlock.addEventListener("click", function() {
         Player.pick(gridBlock)
     });
